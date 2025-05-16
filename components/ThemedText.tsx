@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "InterSemiBold",
-    letterSpacing: -0.6,
+    fontSize: 20,
   },
   subtitle: {
     fontSize: 16,
