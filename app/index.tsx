@@ -18,8 +18,9 @@ export default function Index() {
           paddingTop: top + 16,
           paddingBottom: bottom + 16,
           paddingHorizontal: 16,
-          gap: 16,
+          gap: 12,
         }}
+        showsVerticalScrollIndicator={false}
       >
         <View
           style={{
@@ -27,6 +28,7 @@ export default function Index() {
             height: 400,
             backgroundColor: barColor,
             borderRadius: 12,
+            boxShadow: "0 0 12px #00000005",
           }}
         />
         <DropDown />

@@ -1,13 +1,14 @@
 export type TransactionType = "credit" | "debit";
 
-type Transaction = {
+export type Transaction = {
   id: number;
   title: string;
   category: string;
   icon: string;
   amount: number;
   type: TransactionType;
-  date: string; // ISO format
+  date: string;
+  color: string;
 };
 
 export const TRANSACTIONS: Transaction[] = [
@@ -18,7 +19,8 @@ export const TRANSACTIONS: Transaction[] = [
     icon: "💸",
     amount: 132434.0,
     type: "credit",
-    date: "2023-10-03",
+    date: "3 May, 2025",
+    color: "#4caf50",
   },
   {
     id: 2,
@@ -27,7 +29,8 @@ export const TRANSACTIONS: Transaction[] = [
     icon: "🎁",
     amount: 12.0,
     type: "credit",
-    date: "2023-09-29",
+    date: "12 May, 2025",
+    color: "#2196f3",
   },
   {
     id: 3,
@@ -36,7 +39,8 @@ export const TRANSACTIONS: Transaction[] = [
     icon: "🍕",
     amount: 22748.08,
     type: "debit",
-    date: "2023-09-26",
+    date: "13 May, 2025",
+    color: "#ff9800",
   },
   {
     id: 4,
@@ -45,6 +49,7 @@ export const TRANSACTIONS: Transaction[] = [
     icon: "🎵",
     amount: 35344.74,
     type: "debit",
-    date: "2023-09-08",
+    date: "16 May, 2025",
+    color: "#9c27b0",
   },
 ];
